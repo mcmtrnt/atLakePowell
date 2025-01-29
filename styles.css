@@ -1,5 +1,7 @@
 body {
-    font-family: 'Arial', sans-serif;
+    /* font-family: 'Arial', sans-serif; */
+    /* font-family: "Antic Didone", serif; */
+    font-family: "Cinzel", serif;
 }
 
 .hero {
@@ -23,6 +25,10 @@ body {
 .hero .container {
     position: relative;
     z-index: 1;
+}
+
+.btn-primary {
+    border-radius: 4px;
 }
 
 /* Navbar styles */
@@ -56,7 +62,7 @@ body {
 .navbar-nav .book-now-btn {
     background-color: #FF5A5F;
     color: white;
-    border-radius: 25px;
+    border-radius: 4px;
     padding: 0.5rem 1.5rem;
     margin-left: 0.5rem;
 }
@@ -334,4 +340,107 @@ html {
     position: relative;
     z-index: 2;
     background-color: white;
+}
+
+/* Contact form styles */
+/* #contact {
+    background-color: #f8f9fa;
+}
+
+#contact .card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+#contact .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+#contact .form-control {
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ced4da;
+    transition: all 0.3s ease;
+}
+
+#contact .form-control:focus {
+    border-color: #FF5A5F;
+    box-shadow: 0 0 0 0.2rem rgba(255, 90, 95, 0.25);
+}
+
+#contact .btn-primary {
+    background-color: #FF5A5F;
+    border-color: #FF5A5F;
+    border-radius: 25px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: #FF3B3F;
+    border-color: #FF3B3F;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+} */
+
+/* About this Space styles */
+#about-space {
+    background-color: #ffffff;
+}
+
+#about-space .lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #6c757d;
+}
+
+.feature-list {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+.feature-list li i {
+    color: #FF5A5F;
+    margin-right: 0.5rem;
+    font-size: 1.2rem;
+}
+
+/* Add a subtle animation to the feature list items */
+.feature-list li {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+.feature-list li.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Add a decorative element */
+#about-space::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 4px;
+    background-color: #FF5A5F;
 }

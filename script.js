@@ -62,3 +62,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // ... (keep existing code)
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // ... (keep existing code)
+
+    // Animate feature list items
+    function animateFeatureList() {
+        const featureItems = document.querySelectorAll('.feature-list li');
+        featureItems.forEach((item, index) => {
+            setTimeout(() => {
+                item.classList.add('show');
+            }, index * 200); // Stagger the animation
+        });
+    }
+
+    // Run the animation when the section comes into view
+    const aboutSection = document.getElementById('about-space');
+    if (aboutSection) {
+        const observer = new IntersectionObserver((entries) => {
+            if (entries[0].isIntersecting) {
+                animateFeatureList();
+                observer.disconnect(); // Run the animation only once
+            }
+        });
+        observer.observe(aboutSection);
+    }
+
+    // ... (keep existing code)
+});
