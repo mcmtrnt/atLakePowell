@@ -1,6 +1,4 @@
 body {
-    /* font-family: 'Arial', sans-serif; */
-    /* font-family: "Antic Didone", serif; */
     font-family: "Cinzel", serif;
 }
 
@@ -431,16 +429,4 @@ html {
 .feature-list li.show {
     opacity: 1;
     transform: translateY(0);
-}
-
-/* Add a decorative element */
-#about-space::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100px;
-    height: 4px;
-    background-color: #FF5A5F;
 }
