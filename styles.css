@@ -430,3 +430,49 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* Location & Contact styles */
+#location-contact .card {
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+#location-contact .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+#location-contact .card-body {
+    padding: 2rem;
+}
+
+#location-contact .card-title {
+    color: #FF5A5F;
+    font-weight: 600;
+}
+
+#location-contact ul li {
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+#location-contact ul li i {
+    color: #FF5A5F;
+}
+
+#location-contact .social-links a {
+    font-size: 1.5rem;
+    color: #FF5A5F;
+    transition: all 0.3s ease;
+}
+
+#location-contact .social-links a:hover {
+    color: #FF3B3F;
+    transform: translateY(-3px);
+}
+
+#location-contact iframe {
+    border-radius: 15px;
+}

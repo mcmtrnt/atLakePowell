@@ -33,8 +33,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // ... (keep existing code)
-
     // Navbar color change on scroll
     const navbar = document.querySelector('.navbar');
     const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -60,13 +58,10 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    // ... (keep existing code)
 });
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    // ... (keep existing code)
-
     // Animate feature list items
     function animateFeatureList() {
         const featureItems = document.querySelectorAll('.feature-list li');
@@ -88,6 +83,21 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         observer.observe(aboutSection);
     }
+});
 
-    // ... (keep existing code)
+//Google Maps
+document.addEventListener('DOMContentLoaded', function() {
+    // Make Google Maps iframe responsive
+    function resizeMap() {
+        const mapIframe = document.querySelector('#location-contact iframe');
+        if (mapIframe) {
+            const mapAspectRatio = 4 / 3; // Adjust this value to change the aspect ratio
+            const mapWidth = mapIframe.offsetWidth;
+            mapIframe.style.height = (mapWidth / mapAspectRatio) + 'px';
+        }
+    }
+
+    // Run on load and on window resize
+    window.addEventListener('load', resizeMap);
+    window.addEventListener('resize', resizeMap);
 });
